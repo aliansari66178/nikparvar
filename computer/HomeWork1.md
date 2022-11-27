@@ -149,3 +149,15 @@ for i in range(10):
 > حافظ ار خاطر و خال ما و ز بر بخت نیک
 ## بهبود مدل
 برای بهبود نتایج مدل چند کار میشه انجام داد :
+1. استفاده از مدل پیچیده تر(در اینجا ما فقط از یک لایه LSTM آنهم با 128 واحد حافظه استفاده کرده ایم، استفاده از LSTM های بیشتر و لایه Dropout نتیجه را بهبود میبخشد).
+2. متن بهتر(متنی که استفاده کردیم حدود 300 هزار کارکتر داشت، توصیه میشه برای داشتن مدل بهتر از متنی با بیش از یک میلیون کارکتر استفاده شود).
+
+. . . .
+
+نوت بوک این مطلب روی گیت هاب به آدرس زیر موجود است:
+## منابع
+1. <https://l.vrgl.ir/r?l=https%3A%2F%2Fkeras.io%2Fexamples%2Fgenerative%2Flstm_character_level_text_generation&st=post&si=rynq4emx1qcx&k=zOeyx437OR3QeCv%2FjB2XsCf%2FKnNqtlaItVc2Q19BFN8%3D>
+2. <https://l.vrgl.ir/r?l=https%3A%2F%2Fwww.tensorflow.org%2Ftext%2Ftutorials%2Ftext_generation&st=post&si=rynq4emx1qcx&k=Xo01%2F3zx8TbOD5M81Hr6UKoAcHyw2%2BJdd4Nn9ESMbxg%3D>
+3. <https://l.vrgl.ir/r?l=https%3A%2F%2Fkarpathy.github.io%2F2015%2F05%2F21%2Frnn-effectiveness%2F&st=post&si=rynq4emx1qcx&k=EziJtl8Ly0STV%2F5NYRTMCZtbkrG7r%2FW42DFNlIUC0nA%3D>
+4. Natural Language Processing IN Action, Manning Publication
+5. <https://l.vrgl.ir/r?l=https%3A%2F%2Fgithub.com%2Famnghd%2FPersian_poems_corpus&st=post&si=rynq4emx1qcx&k=vqnt5%2F3s7HTiF0xPTRd3SBaWSAgB%2BmuEJlpNoYX5QIU%3D>
