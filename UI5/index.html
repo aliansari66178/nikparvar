@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <section>نرم‌افزار خانه‌یار</section>
+    </header>
+    <img id="round1" src="pics/round.svg">
+    <img id="round2" src="pics/round2.svg" style="position: fixed; bottom: 0px; left: 150px; width: 50.5px; z-index: 10;">
+    <article id="home" style="padding: 0;" class="block">
+        <img src="pics/SmartHome.jpg" class="large"><br>
+        <h2>وضعیت خانه‌ی من</h2><br>
+        <article class="show">
+            <nav><h1>دمای 1</h1><p class="DHT" id="DHT1"></p></nav>
+            <nav><h1>دمای 2</h1><p class="DHT" id="DHT2"></p></nav>
+            <nav><h1>دمای 0</h1><p class="DHT" id="DHT0"></p></nav>
+        </article>
+        <article class="show">
+            <nav><h1>رطوبت 1</h1><p class="DHT" id="DHT4"></p></nav>
+            <nav><h1>رطوبت 2</h1><p class="DHT" id="DHT5"></p></nav>
+            <nav><h1>رطوبت 0</h1><p class="DHT" id="DHT3"></p></nav>
+        </article>
+    </article>
+    <article id="darha">
+        <nav><img src="pics/dar_o.svg"id="11_o"onclick="send('11/0')"><img src="pics/dar_c.svg"id="11_c"onclick="send('11/1')"><h1>در 1</h1></nav>
+        <nav><img src="pics/dar_o.svg"id="12_o"onclick="send('12/0')"><img src="pics/dar_c.svg"id="12_c"onclick="send('12/1')"><h1>در 2</h1></nav>
+        <nav><img src="pics/dar_o.svg"id="13_o"onclick="send('13/0')"><img src="pics/dar_c.svg"id="13_c"onclick="send('13/1')"><h1>در 3</h1></nav>
+    </article>
+    <article id="cheragh">
+        <nav><img src="pics/onlight.svg"id="0_on"onclick="send('0/0')"><img src="pics/offlight.svg"id="0_off"onclick="send('0/1')"><h1>چراغ 0</h1></nav>
+        <nav><img src="pics/onlight.svg"id="1_on"onclick="send('1/0')"><img src="pics/offlight.svg"id="1_off"onclick="send('1/1')"><h1>چراغ 1</h1></nav>
+        <nav><img src="pics/onlight.svg"id="2_on"onclick="send('2/0')"><img src="pics/offlight.svg"id="2_off"onclick="send('2/1')"><h1>چراغ 2</h1></nav>
+        <nav><img src="pics/onlight.svg"id="3_on"onclick="send('3/0')"><img src="pics/offlight.svg"id="3_off"onclick="send('3/1')"><h1>چراغ 3</h1></nav>
+        <nav><img src="pics/onlight.svg"id="4_on"onclick="send('4/0')"><img src="pics/offlight.svg"id="4_off"onclick="send('4/1')"><h1>چراغ 4</h1></nav>
+        <nav><img src="pics/onlight.svg"id="5_on"onclick="send('5/0')"><img src="pics/offlight.svg"id="5_off"onclick="send('5/1')"><h1>چراغ 5</h1></nav>
+        <nav><img src="pics/onlight.svg"id="6_on"onclick="send('6/0')"><img src="pics/offlight.svg"id="6_off"onclick="send('6/1')"><h1>چراغ 6</h1></nav>
+        <nav><img src="pics/onlight.svg"id="7_on"onclick="send('7/0')"><img src="pics/offlight.svg"id="7_off"onclick="send('7/1')"><h1>چراغ 7</h1></nav>
+        <nav><img src="pics/onlight.svg"id="8_on"onclick="send('8/0')"><img src="pics/offlight.svg"id="8_off"onclick="send('8/1')"><h1>چراغ 8</h1></nav>
+        <nav><img src="pics/onlight.svg"id="9_on"onclick="send('9/0')"><img src="pics/offlight.svg"id="9_off"onclick="send('9/1')"><h1>چراغ 9</h1></nav>
+        <nav><img src="pics/onlight.svg"id="10_on"onclick="send('10/0')"><img src="pics/offlight.svg"id="10_off"onclick="send('10/1')"><h1>چراغ 10</h1></nav>
+    </article>
+    <article id="about" class="block">
+        <h2>نرم‌افزار خانه‌یار</h2>
+        <h3>ساخته شده توسّط دبیرستان نیک‌پرور</h3>
+    </article>
+    <article id="docs" style="padding: 0;" class="ifbox">
+        <iframe src="iframe/1.html" frameborder="0"></iframe>
+    </article>
+    <article id="docs2" style="padding: 0;" class="ifbox">
+        <iframe src="iframe/2.html" frameborder="0"></iframe>
+    </article>
+    <aside>
+        <main>
+            <a href="#home">خانه</a>
+            <a href="#cheragh">چراغ‌ها</a>
+            <a href="#darha">درها</a>
+            <a href="#docs">مستندات ۱</a>
+            <a href="#docs2">مستندات ۲</a>
+            <a href="#about">درباره‌ما</a>
+        </main>
+    </aside>
+</body>
+</html>
