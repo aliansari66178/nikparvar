@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: all 1s;
+    cursor: url(pics/clock-cursor.png), help;
 }
 @keyframes square-to-circle {
 	0%  {
@@ -49,6 +50,7 @@
     src: url(font/IRSina.ttf);
 }
 header {
+    backdrop-filter: blur(var(--glass-blur,40px));
     background-color: #0090bc7f;
     display: block;
     width: calc(100vw - 200px);
